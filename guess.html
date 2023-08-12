@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="guess.css">
+</head>
+
+<body>
+
+    <section id="sec1">
+            <h1>Number Guessing Game</h1>
+            <div class="mode">
+                <h2>Select your mode</h2>
+                <button id="esy" onclick="start1()">Easy</button>
+                <button id="med" onclick="start2()">Medium</button>
+                <button id="hrd" onclick="start3()">Hard</button>
+            </div>
+    </section>
+
+    <section id="sec2">
+        <div id="guessing">
+            <h2 id="st">(Guess the number between <b>1</b> and <b id="max">10</b>)</h2>
+            <div id="result"></div>
+            <input type="number" id="num" placeholder="Enter number">
+            <div id="msg"></div>
+            <button id="tri" onclick="play()">Try</button>
+            <button id="again" onclick="restart()" style="display: none;">Play again</button>
+            <div class="prev">
+                <h5>Previous values</h5>
+                <ul id="list"></ul>
+            </div>
+            <div id="rem">
+                <span id="remaining"></span> Guesses Left
+            </div>
+        </div>
+    </section>
+</body>
+<script src="guess.js"></script>
+<footer>
+  <p>Copyright © 2023 | Developed by <a href="https://www.linkedin.com/in/suryansh-nigam-46b626261/"><strong>Suryansh Nigam</strong></a></p>
+</footer>
+</html>

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+    -webkit-tap-highlight-color: rgb(29, 28, 28);
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("guillermo-velarde-e-4iBXpQo7U-unsplash.jpg");
+    opacity: 0.6;
+    z-index: -2;
+}
+
+section {
+    display: none;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+#sec1 button {
+    display: block;
+    width: 120px;
+    margin: 15px;
+    padding: 8px 25px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    outline: none;
+    transition: all 1s;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#sec1 h1 {
+    font-family: "Grenze Gotisch", cursive;
+    font-size: 35px;
+    color: orange;
+}
+
+#sec1 button:hover {
+    background: black;
+    color: white;
+    width: 150px;
+}
+
+.mode h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 5px;
+}
+
+#sec2 {
+    display: none;
+}
+
+#guessing {
+    text-align: center;
+    border: 1px solid rgb(212, 210, 210);
+    padding: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    background: yellow;
+}
+
+#guessing h2 {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+#guessing input {
+    margin: 15px;
+    width: 60%;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+#guessing button {
+    display: block;
+    width: 60%;
+    padding: 8px 15px;
+    margin: 12px auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: green;
+    color: white;
+    font-size: 15px;
+    transition: all 1s;
+}
+
+#guessing button:hover {
+    background: aquamarine;
+    border: 1px solid rgb(110, 110, 110);
+}
+
+#guessing button:nth-child(2) {
+    display: none;
+}
+
+button {
+    transition: all 1s;
+}
+
+.prev {
+    height: 125px;
+    width: 60%;
+    background: white;
+    margin: 25px auto;
+    padding: 10px;
+    border: none;
+    overflow-y: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.prev ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+}
+
+.prev ul li {
+    list-style: none;
+    color: rgb(85, 85, 85);
+    font-size: 11px;
+}
+
+#result {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 25px 0px;
+}
+
+footer {
+    background: var(--text-color);
+    color: var(--bg-default);
+    text-align: center;
+}
+
+footer>P {
+    padding: 2rem;
+    letter-spacing: 5px;
+}
